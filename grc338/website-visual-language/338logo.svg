@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.2 412.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #daeabc;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1a6d38;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #0e0f12;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 89.65px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="23.59 189.37 33.22 189.37 42.24 396.55 42.24 411.11 187.3 411.11 197.53 194.66 208.97 189.37 208.97 174.81 21.18 172.16 23.59 189.37"/>
+  <path class="cls-1" d="M2.52,181.79l6.62-12.04h10.23v-21.67c13.68-25.46,29.51-40.03,47.55-43.34l92.09,3.61c20.78-.42,34.54,15.08,44.54,39.12l3.61,24.68,13.24,12.64-217.89-3.01Z"/>
+  <polygon class="cls-1" points="106.05 134.49 103.03 56.39 155.29 2.23 162.85 11.05 114.72 57.02 119.53 134.49 106.05 134.49"/>
+  <text class="cls-2" transform="translate(61.73 285.36)"><tspan x="0" y="0">NP</tspan></text>
+</svg>
