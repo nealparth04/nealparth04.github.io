@@ -1,0 +1,186 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+div.container{
+    position: relative;
+    margin:auto;
+    max-width: 40em;
+    
+}
+header{
+    margin-bottom: 1em;
+}
+ul li{
+    list-style: none;
+}
+nav ul li {
+	display: inline;
+    padding-bottom: 0.1em;
+
+	}
+nav ul li a {
+	color: rgb(53, 133, 183);
+	text-decoration: none;
+    font-style: sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0.1em;
+	margin-right: 0.1em;
+	margin-left: 0.1em;
+
+	}
+h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 10em;
+}
+h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin-bottom: 1em;
+}
+figcaption{
+    font-style: italic;
+    color: rgb(112, 112, 112);
+}
+p{
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5em;
+    font-style: sans-serif;
+}
+section.mainstory{
+    margin: auto; 
+}
+section.dancestory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+section.coffeestory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+section.guitarstory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+section.treestory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+section.carstory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+section.surfingstory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1em;
+    font-weight: bold;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+	font-family: sans-serif;
+}
+section.hikingstory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1em;
+    font-weight: bold;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+	font-family: sans-serif;
+}
+section.flowersstory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1em;
+    font-weight: bold;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+	font-family: sans-serif;
+}
+section.candlesstory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1em;
+    font-weight: bold;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+	font-family: sans-serif;
+}
+section.astronomystory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1em;
+    font-weight: bold;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+	font-family: sans-serif;
+}
+section.astrologystory h2{
+    color: rgb(53, 133, 183);
+    font-style: serif;
+    font-size: 1em;
+    font-weight: bold;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+	font-family: sans-serif;
+}
+aside{
+    background-color: rgb(175, 183, 238);
+    padding: 0.5em;
+}
+footer{
+    background-color: #4779b9;
+    padding-top: 2em;
+    padding-bottom:1em;
+    padding-left: 1em;
+}
+footer p{
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 40em) {
+    nav ul li{
+     display: block;
+    }
+    figcaption{
+        margin-left: 0.2em;
+    }
+    h2{
+        margin-left: 0.2em;
+    }
+    p{
+        margin-left: 0.2em;
+    }
+    header{
+        margin-left: 0.5em;
+    }
+}
