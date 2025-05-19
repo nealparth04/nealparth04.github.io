@@ -1,0 +1,246 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+body{
+     background-color: #000435;
+}
+div.home-container,div.container{
+    background-color: #000435;
+    position: relative;
+    margin:auto;
+    max-width: 40em;
+    width:100%
+}
+header{
+    margin-bottom: 1em;
+}
+ul li{
+    list-style: none;
+}
+nav ul li {
+	display: block;
+    padding-bottom: 0.1em;
+
+	}
+nav ul li a {
+    color: #1CA9C9;
+	text-decoration: none;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-top: 0.1em;
+	margin-right: 0.1em;
+	margin-left: 0.1em;
+
+	}
+h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 10em;
+}
+h2{
+    color: #ffffff;
+    font-size: 2em;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin-bottom: 1em;
+}
+figcaption{
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(112, 112, 112);
+    margin-top: 0.2em;
+}
+p{
+    color: #ffffff;
+    margin-top: 0.2em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    font-family: "komu-a", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+section.secondary h2{
+    color: #ffffff;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+}
+section.tertiary h2{
+    color: #ffffff;
+	width: 100%; 
+    padding-top: 1em;
+	border-top: 1px solid #4779b9;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
+}
+aside{
+    padding: 0.5em;
+}
+article p{
+    padding: 0.2em;
+}
+footer{
+    background-color: #1CA9C9;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    margin:auto;
+}
+footer p{
+    color: rgb(255, 255, 255);
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media only screen and (min-width: 10em) {
+    nav ul li{
+     display: inline;
+    }
+    figcaption{
+        margin-left: 0.2em;
+    }
+    h2{
+        margin-left: 0.2em;
+    }
+    p{
+        margin-left: 0.2em;
+    }
+    header{
+        margin-left: 0.5em;
+    }
+    section.mainstory a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    section.mainstory a figure{
+        flex:  1 0 12em;
+        display: flex;
+     }
+     section.mainstory a figure img{
+        object-fit: cover;
+      }
+      section.mainstory a p{
+        padding-left: 0.2em;
+      }
+    section.secondary a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    section.secondary a figure{
+       flex:  1 0 12em;
+       display: flex;
+    }
+    section.secondary a figure img{
+       object-fit: cover;
+     }
+     section.secondary a p{
+        padding-left: 0.2em;
+     }
+}
+@media only screen and (min-width: 60em) {
+
+    div.home-container{
+     max-width: 80em;
+     padding: 0 1em;
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+     grid-gap: 1em;
+    }
+    div.container{
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+       }
+
+header{
+    grid-column: 1/3;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1em;
+}
+
+div.home-container aside{
+       background: none;
+       padding: 0;
+       margin-top: 0;
+       }
+ div.container aside{
+        margin-top: 0;
+        }
+   
+section.mainstory{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display: flex;
+}
+section.mainstory a{
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+}
+section.mainstory a figure{
+   flex:  1 0 12em;
+   display: flex;
+}
+section.mainstory a figure img{
+   object-fit: cover;
+ }
+section.mainstory a h2{
+    flex: 0 0 1em;
+}
+section.mainstory a p{
+    flex: 0 0 4em;
+    padding-left: 0.2em;
+}
+section.secondary{
+    display: flex;
+}
+section.secondary a{
+    flex: 1 0 12em;
+    display: flex;
+    flex-direction: column;
+}
+section.secondary a figure{
+   flex:  1 0 12em;
+   display: flex;
+}
+section.secondary a figure img{
+   object-fit: cover;
+ }
+section.secondary a h2{
+    flex: 0 0 1em;
+}
+section.secondary a p{
+    flex: 0 0 4em;
+    padding-left: 0.2em;
+
+}
+}
+
