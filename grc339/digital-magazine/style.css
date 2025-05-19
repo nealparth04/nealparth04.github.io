@@ -6,11 +6,15 @@ img {
     width: 100%;
     display: block;
 }
+body{
+     background-color: #000435;
+}
 div.home-container,div.container{
+    background-color: #000435;
     position: relative;
     margin:auto;
     max-width: 40em;
-    
+    width:100%
 }
 header{
     margin-bottom: 1em;
@@ -24,11 +28,12 @@ nav ul li {
 
 	}
 nav ul li a {
-	color: rgb(53, 133, 183);
+    color: #1CA9C9;
 	text-decoration: none;
-    font-style: sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
     margin-top: 0.1em;
 	margin-right: 0.1em;
 	margin-left: 0.1em;
@@ -40,10 +45,11 @@ h1{
     width: 10em;
 }
 h2{
-    color: rgb(53, 133, 183);
+    color: #ffffff;
     font-size: 2em;
-    font-weight: bold;
-    font-style: sans-serif;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 a{
     text-decoration: none;
@@ -52,91 +58,62 @@ figure{
     margin-bottom: 1em;
 }
 figcaption{
-    font-style: sans-serif;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
     font-style: italic;
     color: rgb(112, 112, 112);
+    margin-top: 0.2em;
 }
 p{
-    color: rgb(0, 0, 0);
+    color: #ffffff;
+    margin-top: 0.2em;
     margin-bottom: 1.5em;
-    font-style: sans-serif;
+    font-size: 1em;
+    font-family: "komu-a", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 section.secondary h2{
-    color: rgb(53, 133, 183);
-    font-style: sans-serif;
+    color: #ffffff;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.5em;
-    font-weight: bold;
 
 }
-section.surfingstory h2{
-    color: rgb(53, 133, 183);
-    font-size: 1em;
-    font-weight: bold;
+section.tertiary h2{
+    color: #ffffff;
 	width: 100%; 
     padding-top: 1em;
 	border-top: 1px solid #4779b9;
-	font-family: sans-serif;
-}
-section.hikingstory h2{
-    color: rgb(53, 133, 183);
-    font-size: 1em;
-    font-weight: bold;
-	width: 100%; 
-    padding-top: 1em;
-	border-top: 1px solid #4779b9;
-	font-family: sans-serif;
-}
-section.flowersstory h2{
-    color: rgb(53, 133, 183);
-    font-size: 1em;
-    font-weight: bold;
-	width: 100%; 
-    padding-top: 1em;
-	border-top: 1px solid #4779b9;
-	font-family: sans-serif;
-}
-section.candlesstory h2{
-    color: rgb(53, 133, 183);
-    font-size: 1em;
-    font-weight: bold;
-	width: 100%; 
-    padding-top: 1em;
-	border-top: 1px solid #4779b9;
-	font-family: sans-serif;
-}
-section.astronomystory h2{
-    color: rgb(53, 133, 183);
-    font-size: 1em;
-    font-weight: bold;
-	width: 100%; 
-    padding-top: 1em;
-	border-top: 1px solid #4779b9;
-	font-family: sans-serif;
-}
-section.astrologystory h2{
-    color: rgb(53, 133, 183);
-    font-size: 1em;
-    font-weight: bold;
-	width: 100%; 
-    padding-top: 1em;
-	border-top: 1px solid #4779b9;
-	font-family: sans-serif;
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+
 }
 aside{
-    background-color: rgb(175, 183, 238);
     padding: 0.5em;
 }
+article p{
+    padding: 0.2em;
+}
 footer{
-    background-color: #4779b9;
-    padding-top: 2em;
-    padding-bottom:1em;
+    background-color: #1CA9C9;
+    padding-top: 1em;
     padding-left: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    margin:auto;
 }
 footer p{
     color: rgb(255, 255, 255);
+    font-family: "komu-a", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 10em) {
     nav ul li{
      display: inline;
     }
@@ -152,8 +129,37 @@ footer p{
     header{
         margin-left: 0.5em;
     }
+    section.mainstory a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    section.mainstory a figure{
+        flex:  1 0 12em;
+        display: flex;
+     }
+     section.mainstory a figure img{
+        object-fit: cover;
+      }
+      section.mainstory a p{
+        padding-left: 0.2em;
+      }
+    section.secondary a{
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    section.secondary a figure{
+       flex:  1 0 12em;
+       display: flex;
+    }
+    section.secondary a figure img{
+       object-fit: cover;
+     }
+     section.secondary a p{
+        padding-left: 0.2em;
+     }
 }
-
 @media only screen and (min-width: 60em) {
 
     div.home-container{
@@ -211,7 +217,7 @@ section.mainstory a h2{
 }
 section.mainstory a p{
     flex: 0 0 4em;
-}
+    padding-left: 0.2em;
 }
 section.secondary{
     display: flex;
@@ -233,5 +239,8 @@ section.secondary a h2{
 }
 section.secondary a p{
     flex: 0 0 4em;
+    padding-left: 0.2em;
+
+}
 }
 
