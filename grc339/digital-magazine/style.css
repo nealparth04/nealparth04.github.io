@@ -9,7 +9,7 @@ img {
 body{
      background-color: #000435;
 }
-div.home-container,div.container{
+div.home-container,div.container,div.newsletter-container{
     background-color: #000435;
     position: relative;
     margin:auto;
@@ -30,7 +30,7 @@ nav ul li {
 nav ul li a {
     color: #1CA9C9;
 	text-decoration: none;
-    font-family: "komu-a", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3em;
@@ -47,7 +47,7 @@ h1{
 h2{
     color: #ffffff;
     font-size: 2em;
-    font-family: "komu-a", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -57,26 +57,150 @@ a{
 figure{
     margin-bottom: 1em;
 }
+
+section.playersnewsletter h2{
+    margin-bottom: 0.5em;
+}
+
+section.playersnewsletter ul li{
+	display: flex;
+	flex-wrap: wrap;
+}
+section.playersnewsletter ul li label{
+	margin-top: 0.25em;
+    margin-bottom: 0.05em;
+	flex: 1 0 7em;
+    color: #ffffff;
+}
+
+section.playersnewsletter ul li input[type="text"],
+section.playersnewsletter ul li input[type="text"],
+section.playersnewsletter ul li input[type="text"],
+section.playersnewsletter ul li select{
+margin-bottom:1em;
+flex: 2 0 20em;
+}
+section.coachesnewsletter h2{
+    margin-bottom: 0.5em;
+}
+
+section.coachesnewsletter ul li{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.coachesnewsletter ul li label{
+    margin-top: 0.25em;
+    margin-bottom: 0.05em;
+	flex: 1 0 7em;
+    color: #ffffff;
+}
+
+section.coachesnewsletter ul li input[type="text"],
+section.coachesnewsletter ul li input[type="text"],
+section.coachesnewsletter ul li input[type="text"],
+section.coachesnewsletter ul li select{
+margin-bottom: 1em;
+flex: 2 0 20em;
+}
+section.frontofficenewsletter{
+    margin-bottom: 5em;
+}
+section.frontofficenewsletter h2{
+    margin-bottom: 0.5em;
+}
+
+section.frontofficenewsletter label[for="name"]{
+    margin-bottom: 0.5em;
+}
+
+
+section.frontofficenewsletter ul li{
+	display: flex;
+	flex-wrap: wrap;
+}
+section.frontofficenewsletter ul li label{
+    margin-top: 0.25em;
+    margin-bottom: 0.05em;
+	flex: 1 0 7em;
+    color: #ffffff;
+}
+section.frontofficenewsletter ul li input[type="text"],
+section.frontofficenewsletter ul li input[type="text"],
+section.frontofficenewsletter ul li input[type="text"],
+section.frontofficenewsletter ul li select{
+margin-bottom: 1em;
+flex: 2 0 20em;
+}
+
+.photogallerymain figure img{
+    width: 100%;
+    display: block;
+}
+
+.photo-container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.photogallerymain {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(68% + 3em);
+}
+
+.photogallerymain figure{
+    margin: 0;
+    width: calc(100% - 2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+ input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+ input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+ input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+ input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+ input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+ input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+ input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+ input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+ }
+
+.photogallerynav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-gap: 0.2em;
+    margin-top: 1em;
+    margin-bottom: 16em;
+}
+.photo-container input {
+    display: none;
+}
+
 figcaption{
-    font-family: "komu-a", sans-serif;
-    font-weight: 400;
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
     font-style: italic;
     color: rgb(112, 112, 112);
     margin-top: 0.2em;
 }
+
 p{
     color: #ffffff;
     margin-top: 0.2em;
     margin-bottom: 1.5em;
     font-size: 1em;
-    font-family: "komu-a", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    font-family: "roboto", sans-serif;
+   font-weight: 300;
+   font-style: normal;
 }
 
 section.secondary h2{
     color: #ffffff;
-    font-family: "komu-a", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
@@ -87,7 +211,7 @@ section.tertiary h2{
 	width: 100%; 
     padding-top: 1em;
 	border-top: 1px solid #4779b9;
-    font-family: "komu-a", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
@@ -101,15 +225,15 @@ article p{
 }
 footer{
     background-color: #1CA9C9;
-    padding-top: 1em;
     padding-left: 1em;
     padding-bottom: 1em;
     width: 100%;
     margin:auto;
+    position: relative;
 }
 footer p{
     color: rgb(255, 255, 255);
-    font-family: "komu-a", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -161,6 +285,8 @@ footer p{
      }
 }
 @media only screen and (min-width: 60em) {
+   
+    
 
     div.home-container{
      max-width: 80em;
@@ -176,6 +302,7 @@ footer p{
         grid-template-columns: 3fr 1fr;
         grid-gap: 1em;
        }
+      
 
 header{
     grid-column: 1/3;
