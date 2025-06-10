@@ -145,11 +145,7 @@ flex: 2 0 20em;
     padding: 1em;
 }
 
-.photogallerymain {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: calc(70% + 10em);
-}
+
 
 .photogallerymain figure{
     margin: 0;
@@ -397,10 +393,19 @@ footer p{
      section.secondary a p{
         padding-left: 0.2em;
      }
+     .photogallerymain {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: calc(80% + 12em);
+    }    
 }
 @media only screen and (min-width: 60em) {
    
-    
+    .photogallerymain {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(70% + 4em);
+}
 
     div.home-container{
      max-width: 80em;
